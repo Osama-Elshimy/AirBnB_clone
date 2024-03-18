@@ -5,6 +5,8 @@
 .places > h1 {
   font-size: 30px;
   text-align: start;
+  margin-block-start: 20px;
+  margin-inline-start: 20px;
 }
 
 .places > article {
