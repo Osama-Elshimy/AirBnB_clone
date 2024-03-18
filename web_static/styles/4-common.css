@@ -4,13 +4,15 @@ body {
   color: #484848;
   font-size: 14px;
   font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .container {
-  max-width: 1000px;
-  margin-block: 30px;
+  /* max-width: 1000px, but in a more modren and better syntax */
+  width: min(100% - 3rem, 1000px);
   margin-inline: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-block: 30px;
 }
