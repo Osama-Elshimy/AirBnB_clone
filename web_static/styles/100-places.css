@@ -1,3 +1,7 @@
+ul {
+  list-style-type: none;
+}
+
 .places {
   text-align: center;
   display: grid;
@@ -40,6 +44,7 @@
 
 .places > article > :not(h2, .price_by_night) {
   grid-column: 1 /-1;
+  width: 100%;
 }
 
 .places > article > h2 {
@@ -88,6 +93,50 @@
 }
 
 .user,
-.description {
+.description,
+.amenities,
+.reviews {
   text-align: start;
+}
+
+.amenities > h2,
+.reviews > h2 {
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  padding-block: 1rem 0.5rem;
+  margin-block: 1rem 0.5rem;
+}
+
+.reviews h3 {
+  font-size: 14px;
+  margin-block-end: 0.2rem;
+}
+
+.reviews p {
+  font-size: 12px;
+  margin-block-end: 1rem;
+}
+
+.amenities li {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  width: 3rem;
+  aspect-ratio: 1;
+  margin-inline-end: 1rem;
+}
+
+.icon_tv {
+  background-image: url("../images/icon_tv.png");
+}
+
+.icon_wifi {
+  background-image: url("../images/icon_wifi.png");
+}
+
+.icon_pets {
+  background-image: url("../images/icon_pets.png");
 }
